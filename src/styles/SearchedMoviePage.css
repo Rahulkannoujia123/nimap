@@ -1,0 +1,47 @@
+/* src/styles/SearchedMoviePage.css */
+.searched-movie-page {
+    padding: 20px;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-bar input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .search-bar button {
+    margin-left: 10px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .movie-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .movie-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .movie-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .movie-card p {
+    margin: 10px 0;
+    font-weight: bold;
+  }
+  

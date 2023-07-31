@@ -6,8 +6,85 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;}
+.home{
+  margin-top: 20px;
+}
+.container{
+  padding: 0 20px;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+nav {
+  background: hsl(0, 100%, 82%);
+  
+}
+nav ul{
+  display: flex;
+  list-style: none;
+}
+nav a{color: #fff;
+padding: 15px;
+display: inline-block;
+text-decoration: none;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 30px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+.search-container {
+  position: absolute;
+  top: 10px;
+  right: 50px;
+}
+form {
+  display: inline-flex;
+  align-items: right;
+}
+
+input[type='text'] {
+  padding: 5px 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button {
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  border-radius: 3px;
+}
+.movies{
+  display: grid;
+  margin: 2rem 0;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+}
+.movies li{
+  height: 300px;
+  overflow: hidden;
+}
+.movies li{
+  display: flex;
+  flex-direction: column;
+}
+.movies img{max-width: 100%;}
+@media (max-width:767px){
+  .movies{display: block;}
 }
