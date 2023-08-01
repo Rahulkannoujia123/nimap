@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom'; // Import useParams to get the movie_id from the URL
-import '../styles/SingleMovieDetailPage.css'; // Import the custom CSS file
+import './styles/SingleMovieDetailPage.css'; // Import the custom CSS file
 
 const SingleMovieDetailPage = () => {
   const { movieId } = useParams(); // Get the movie_id from the URL parameter

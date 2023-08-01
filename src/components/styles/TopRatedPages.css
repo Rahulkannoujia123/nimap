@@ -1,0 +1,51 @@
+/* src/topRatedMovies.css */
+
+.top-rated-movies {
+    padding: 20px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .movie-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  /* MovieItem styles (you can adjust the styles in MovieItem.js) */
+  .movie-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    max-width: 300px;
+  }
+  
+  .movie-item h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .movie-item p {
+    margin-bottom: 5px;
+  }
+  
+  .movie-item img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+  }
+  
+  /* Handle image loading failures */
+  .movie-item img {
+    display: none;
+  }
+  
+  .movie-item img.error {
+    display: block;
+    width: 100%;
+    max-height: 400px;
+  }
+  

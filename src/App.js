@@ -7,7 +7,7 @@ import "./App.css"
 import TopRatedPage from "./components/TopRatedPages";
 import UpcomingMoviePage from "./components/UpcomingMoviePage";
 import SingleMovieDetailPage from "./components/SingleMovieDetailPage";
-import SearchedMoviePage from "./components/SearchedMoviePage";
+import SearchedMoviePage from "./components/SearchMoviePage";
 const App = () => {
   return (
     <>
@@ -31,7 +31,7 @@ const App = () => {
           <Route path="/top-rated" element={<TopRatedPage />} />
           <Route path="/upcoming" element={<UpcomingMoviePage />} />
           <Route path="/movie/:movieId" element={<SingleMovieDetailPage />} />
-          <Route path="/sear" element={<SearchedMoviePage />} />
+          <Route path="/home" element={<SearchedMoviePage />} />
         </Routes>
       </BrowserRouter>
     </>

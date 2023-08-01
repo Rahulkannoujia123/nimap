@@ -1,7 +1,7 @@
 // src/components/UpcomingMoviePage.js
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import '../styles/UpcomingMoviePage.css'; // Import the custom CSS file
+import './styles/UpcomingMoviePage.css'; // Import the custom CSS file
 
 const UpcomingMoviePage = () => {
   const [upcomingMovies, setUpcomingMovies] = useState([]);

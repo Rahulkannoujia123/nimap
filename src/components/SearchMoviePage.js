@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom'; // Import useHistory to handle navigation
-import '../styles/SearchedMoviePage.css'; // Import the custom CSS file
+import './styles/SearchedMoviePage.css'; // Import the custom CSS file
 
 const SearchedMoviePage = () => {
   const [searchQuery, setSearchQuery] = useState('');

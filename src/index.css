@@ -70,21 +70,33 @@ button {
   color: #fff;
   border-radius: 3px;
 }
-.movies{
+/* MoviePanel.css */
+.movie-panel {
   display: grid;
-  margin: 2rem 0;
-  grid-gap: 2rem;
-  grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
 }
-.movies li{
-  height: 300px;
-  overflow: hidden;
+
+.movie-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
 }
-.movies li{
-  display: flex;
-  flex-direction: column;
+
+.movie-card img {
+  width: 100%;
+  border-radius: 5px;
 }
-.movies img{max-width: 100%;}
-@media (max-width:767px){
-  .movies{display: block;}
+
+.movie-card h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.movie-card p {
+  font-size: 14px;
+  color: #666;
 }

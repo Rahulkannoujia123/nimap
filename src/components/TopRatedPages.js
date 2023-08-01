@@ -1,7 +1,7 @@
 // src/components/TopRatedPage.js
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import '../styles/TopRatedPages.css'
+import './styles/TopRatedPages.css'
 
 const TopRatedPage = () => {
   const [topRatedMovies, setTopRatedMovies] = useState([]);
@@ -26,14 +26,14 @@ const TopRatedPage = () => {
     <div>
       <h2>Top Rated Movies</h2>
       {/* Display list of top-rated movies */}
-      <ul>
+      
         {topRatedMovies.map(movie => (
           <li key={movie.id}>
             <img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt={movie.title} />
             <p>{movie.title}</p>
           </li>
         ))}
-      </ul>
+      
     </div>
   );
 };
